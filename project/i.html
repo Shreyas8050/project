@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calories Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <style>
+    /* Paste the provided CSS code here */
+  </style>
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+  <section class="hero">
+    <div class="side-container">
+      <div class="side-elements">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="side-elements-text">
+          <h1 class="heading-l">Calories Calculator</h1>
+          <p class="body-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nunc enim, molestie non arcu non, blandit gravida elit. Nam aliquet est dolor, non auctor urna posuere sit amet. </p>
+        </div>
+      </div>
+    </div>
+    <div class="bmi-card">
+      <h2 class="title">Calculate Your Calories</h2>
+      <form id="caloriesCalculator" class="imperial">
+        <div class="attach input-field" data-domain="Age">
+          <label for="age">Age (years)</label>
+          <input type="number" id="age" placeholder="Enter your age" required>
+        </div>
+        <div class="attach input-field" data-domain="Gender">
+          <label for="gender">Gender</label>
+          <select id="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div class="attach input-field" data-domain="Weight">
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" placeholder="Enter your weight" required>
+        </div>
+        <div class="attach input-field" data-domain="Height">
+          <label for="height">Height (cm)</label>
+          <input type="number" id="height" placeholder="Enter your height" required>
+        </div>
+        <div class="attach input-field" data-domain="Activity Level">
+          <label for="activityLevel">Activity Level</label>
+          <select id="activityLevel" required>
+            <option value="sedentary">Sedentary (little to no exercise)</option>
+            <option value="lightlyActive">Lightly Active (light exercise/sports 1-3 days/week)</option>
+            <option value="moderatelyActive">Moderately Active (moderate exercise/sports 3-5 days/week)</option>
+            <option value="veryActive">Very Active (hard exercise/sports 6-7 days a week)</option>
+            <option value="superActive">Super Active (very hard exercise/sports & physical job or 2x training)</option>
+          </select>
+        </div>
+        <div class="attach input-field" data-domain="Goal">
+          <label for="goal">Goal</label>
+          <select id="goal" required>
+            <option value="maintenance">Maintenance</option>
+            <option value="weightLoss">Weight Loss</option>
+            <option value="weightGain">Weight Gain</option>
+          </select>
+        </div>
+        <button type="submit">Calculate Calories</button>
+      </form>
+      <div id="caloriesResult" class="results"></div>
+    </div>
+  </section>
+  <script>
+    // JavaScript code for calorie calculation goes here
+  </script>
+</body>
+</html>
